@@ -1,0 +1,18 @@
+---
+title: "Calidad"
+--- 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,  fig.align="center", out.extra = 'style="display:block; margin:auto;"')
+```
+
+<div class=text-justify>
+
+<br/>
+
+## Unidades de Observación
+
+Los establecimientos que están obligados a presentar declaración de la Cédula de Operación Anual (COA) para el Registro de Emisiones y Transferencia de Contaminantes (RETC), ante la Secretaría del Medio Ambiente y Recursos Naturales (SEMARNAT).
+
+## Cobertura Geográfica
+A nivel nacional.

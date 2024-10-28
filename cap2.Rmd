@@ -1,0 +1,72 @@
+---
+title: "Criterios de Gobierno"
+--- 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,  fig.align="center", out.extra = 'style="display:block; margin:auto;"')
+```
+
+<div class=text-justify>
+
+<br/>
+
+# Objetivos
+****
+
+## Objetivo General
+
+Elaborar un mapa ambiental que ubique geográficamente aquellas unidades económicas que manejen sustancias consideradas por la legislación mexicana, como peligrosas. 
+
+
+## Objetivos Específicos
+
+1. Construir el mapa utilizando herramientas de software libre, y buscar una plataforma adecuada para su difusión, acorde con el tipo de información, las necesidades de los usuarios, el cumplimiento de la normatividad institucional y la compatibilidad con las publicaciones ya existentes.
+
+2. Como valor agregado, la propuesta considera junto con la ubicación puntual de las unidades económicas, la inclusión de datos asociados, tales como tipo de sustancia peligrosa y área de influencia.
+
+3. Llevar a cabo la actualización del mapa ambiental, cada año, a partir de la primera actualización que se haga en este proyecto.
+
+
+# Antecedentes
+****
+
+## Experiencia Internacional
+
+Se han desarrollado algunos esfuerzos por plasmar en mapas los riesgos ambientales derivados del manejo de sustancias peligrosas o contaminantes, destacando entre otros, los siguientes:
+
+• [*Mapa de distribución geográfica de focos contaminantes de España.*](https://www.ign.es/espmap/mapas_conta_bach/pdf/Contam%20_mapa_01_texto.pdf){target="_blank"} Elaborado en 2004, ubica los principales focos de contaminación de industrias en ese país.
+
+• [*Mapas interactivos de la Agencia Ambiental Europea.*](https://www.eea.europa.eu/data-and-maps/figures/#c0=15&c5=&c15=all&b_start=0){target="_blank"} Contienen el registro de más de 24,000 variables de 91 tipos de sustancias consideradas contaminantes en 65 actividades económicas diferentes en los 27 estados miembros, además de Liechtenstein, Islandia y Noruega.
+
+
+## Situación de la Temática en México
+
+En la búsqueda de antecedentes similares a lo que se pretende construir, se encontraron experiencias similares, particularmente de los países que conforman la Comisión para la Cooperación Ambiental (CCA) de América del Norte (México, Estados Unidos y Canadá).
+
+El proyecto en cuestión, cuenta con información del Registro de Emisiones y Transferencia de Contaminantes (RETC) con datos del año 2005, por lo que se analizó y consideró pertinente trabajar en un proceso de actualización de este mapa, para que los usuarios actuales y potenciales cuenten con la información vigente.
+
+
+El Registro de Emisiones y Transferencia de Contaminantes (RETC) es una base de datos nacional con información de sustancias contaminantes emitidas al aire, agua, suelo y subsuelo, o que son transferidas en el agua residual y/o en los residuos peligrosos. Las transferencias se hacen a un sitio que se encuentra físicamente separado del establecimiento que las generó, con finalidades de reutilización, reciclaje, coprocesamiento, tratamiento, incineración, disposición final, incluyendo transferencia a alcantarillado y otros destinos.
+
+La instrumentación del RETC inició con la entrada en vigor del Tratado de Libre Comercio con los países de América del Norte (1994) y durante los primeros siete años era de carácter voluntario. A finales del 2001, se publicó una modificación al artículo 109 bis de la *Ley General del Equilibrio Ecológico y la Protección al Ambiente (LGEEPA)* que señala que la integración del RETC es obligatorio para los tres órdenes de gobierno y, por su parte, las personas físicas y morales responsables de fuentes contaminantes están obligadas a proporcionar la información, datos y documentos necesarios para la integración del Registro. La información registrada es pública y tiene efectos declarativos.
+
+<br/>
+
+
+<br/>
+
+Actualmente, si bien existe un esfuerzo trinacional en esta dirección, bajo el nombre de [**Atlas Ambiental de América del Norte**](http://www.cec.org/sites/default/atlas/map/?layers=bathymetry,shadedrelief,industrialpollutants,prtr_2006&opacities=-,-,-,-&zindexes=696,697,698,699&x=-100.364&y=25.806&z=2097152&lang=es){target="_blank"}, la información con que cuenta, se encuentra desactualizada, pues los datos con que se construyó son del año 2005. El atlas tampoco contiene tiene la metodología utilizada, por lo que este trabajo puede ser perfectamente complemento de aquél. 
+
+
+# Justificación 
+****
+
+**Detección de Necesidades de Información.**
+
+Actualmente existe información estadística sobre las unidades económicas y sus emisiones (RETC, 2018), ésta es captada por la SEMARNAT y está disponible al público en su portal. Sin embargo, la dinámica social y las necesidades de información obligan a ofrecer a la población, no solo datos estadísticos, sino que puedan asociarse a elementos geográficos.
+
+**Idoneidad.**
+
+El proyecto es pertinente porque se cuenta con las herramientas metodológicas y técnicas para poder asociar las empresas a coordenadas, con su referenciación geográfica. El procedimiento propuesto cumple con las fases recomendadas por los lineamentos de nuestra institución.
+
+En ausencia de mapas que muestren información actualizada a nivel geográfico, se propone georreferenciar la información para hacerla accesible de manera sencilla y visual, para los usuarios de la información que prefieren el manejo de los datos a través de mapas. Además de la información geográfica puntual, se pretende asociarla a otras capas de temas relacionados con ésta.

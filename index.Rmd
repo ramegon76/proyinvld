@@ -1,0 +1,22 @@
+---
+title: "Proyecto de Investigación: Aprovechamiento del lago de datos para la implementación de criterios de gobierno, seguridad, confidencialidad estadística, calidad e interoperabilidad de información"
+--- 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,  fig.align="center", out.extra = 'style="display:block; margin:auto;"')
+```
+
+<div class=text-justify>
+
+<br/>
+
+I. Introducción
+
+El Instituto Nacional de Estadística y Geografía (INEGI), a través de la Dirección de Estadísticas del Medio Ambiente presenta el marco metodológico del Mapa Digital de Unidades 
+Económicas que Manejan Sustancias Peligrosas, proyecto destinado a generar información sobre los establecimientos productivos o mercantiles que utilizan en algún momento de sus procesos productivos, sustancias consideradas como peligrosas.
+
+Con la actualización de este mapa, del cual existe ya un antecedente en 2005, se pretende 
+señalar la ubicación geográfica de dichas unidades económicas a efecto de delimitar zonas de 
+riesgo potencial para la población que reside en las inmediaciones de los establecimientos, 
+para los trabajadores que laboran en ellos, para otras unidades económicas aledañas, y para los 
+ecosistemas circundantes.

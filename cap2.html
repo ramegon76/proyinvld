@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Criterios de Gobierno</title>
+
+<script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Aprovechamiento del lago de datos <br> para la implementación de criterios de gobierno,<br> seguridad, confidencialidad estadística, <br>calidad e interoperabilidad de información</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Presentación</a>
+</li>
+<li>
+  <a href="cap_2.html">Criterios de gobierno</a>
+</li>
+<li>
+  <a href="cap_3.html">Calidad</a>
+</li>
+<li>
+  <a href="cap_4.html">Seguridad y confidencialidad</a>
+</li>
+<li>
+  <a href="cap_5.html">Interoperabilidad</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Criterios de Gobierno</h1>
+
+</div>
+
+
+<div class=text-justify>
+
+<p><br/></p>
+<div id="objetivos" class="section level1">
+<h1>Objetivos</h1>
+<hr />
+<div id="objetivo-general" class="section level2">
+<h2>Objetivo General</h2>
+<p>Elaborar un mapa ambiental que ubique geográficamente aquellas
+unidades económicas que manejen sustancias consideradas por la
+legislación mexicana, como peligrosas.</p>
+</div>
+<div id="objetivos-específicos" class="section level2">
+<h2>Objetivos Específicos</h2>
+<ol style="list-style-type: decimal">
+<li><p>Construir el mapa utilizando herramientas de software libre, y
+buscar una plataforma adecuada para su difusión, acorde con el tipo de
+información, las necesidades de los usuarios, el cumplimiento de la
+normatividad institucional y la compatibilidad con las publicaciones ya
+existentes.</p></li>
+<li><p>Como valor agregado, la propuesta considera junto con la
+ubicación puntual de las unidades económicas, la inclusión de datos
+asociados, tales como tipo de sustancia peligrosa y área de
+influencia.</p></li>
+<li><p>Llevar a cabo la actualización del mapa ambiental, cada año, a
+partir de la primera actualización que se haga en este
+proyecto.</p></li>
+</ol>
+</div>
+</div>
+<div id="antecedentes" class="section level1">
+<h1>Antecedentes</h1>
+<hr />
+<div id="experiencia-internacional" class="section level2">
+<h2>Experiencia Internacional</h2>
+<p>Se han desarrollado algunos esfuerzos por plasmar en mapas los
+riesgos ambientales derivados del manejo de sustancias peligrosas o
+contaminantes, destacando entre otros, los siguientes:</p>
+<p>• <a
+href="https://www.ign.es/espmap/mapas_conta_bach/pdf/Contam%20_mapa_01_texto.pdf"
+target="_blank"><em>Mapa de distribución geográfica de focos
+contaminantes de España.</em></a> Elaborado en 2004, ubica los
+principales focos de contaminación de industrias en ese país.</p>
+<p>• <a
+href="https://www.eea.europa.eu/data-and-maps/figures/#c0=15&amp;c5=&amp;c15=all&amp;b_start=0"
+target="_blank"><em>Mapas interactivos de la Agencia Ambiental
+Europea.</em></a> Contienen el registro de más de 24,000 variables de 91
+tipos de sustancias consideradas contaminantes en 65 actividades
+económicas diferentes en los 27 estados miembros, además de
+Liechtenstein, Islandia y Noruega.</p>
+</div>
+<div id="situación-de-la-temática-en-méxico" class="section level2">
+<h2>Situación de la Temática en México</h2>
+<p>En la búsqueda de antecedentes similares a lo que se pretende
+construir, se encontraron experiencias similares, particularmente de los
+países que conforman la Comisión para la Cooperación Ambiental (CCA) de
+América del Norte (México, Estados Unidos y Canadá).</p>
+<p>El proyecto en cuestión, cuenta con información del Registro de
+Emisiones y Transferencia de Contaminantes (RETC) con datos del año
+2005, por lo que se analizó y consideró pertinente trabajar en un
+proceso de actualización de este mapa, para que los usuarios actuales y
+potenciales cuenten con la información vigente.</p>
+<p>El Registro de Emisiones y Transferencia de Contaminantes (RETC) es
+una base de datos nacional con información de sustancias contaminantes
+emitidas al aire, agua, suelo y subsuelo, o que son transferidas en el
+agua residual y/o en los residuos peligrosos. Las transferencias se
+hacen a un sitio que se encuentra físicamente separado del
+establecimiento que las generó, con finalidades de reutilización,
+reciclaje, coprocesamiento, tratamiento, incineración, disposición
+final, incluyendo transferencia a alcantarillado y otros destinos.</p>
+<p>La instrumentación del RETC inició con la entrada en vigor del
+Tratado de Libre Comercio con los países de América del Norte (1994) y
+durante los primeros siete años era de carácter voluntario. A finales
+del 2001, se publicó una modificación al artículo 109 bis de la <em>Ley
+General del Equilibrio Ecológico y la Protección al Ambiente
+(LGEEPA)</em> que señala que la integración del RETC es obligatorio para
+los tres órdenes de gobierno y, por su parte, las personas físicas y
+morales responsables de fuentes contaminantes están obligadas a
+proporcionar la información, datos y documentos necesarios para la
+integración del Registro. La información registrada es pública y tiene
+efectos declarativos.</p>
+<p><br/></p>
+<p><br/></p>
+<p>Actualmente, si bien existe un esfuerzo trinacional en esta
+dirección, bajo el nombre de <a
+href="http://www.cec.org/sites/default/atlas/map/?layers=bathymetry,shadedrelief,industrialpollutants,prtr_2006&amp;opacities=-,-,-,-&amp;zindexes=696,697,698,699&amp;x=-100.364&amp;y=25.806&amp;z=2097152&amp;lang=es"
+target="_blank"><strong>Atlas Ambiental de América del
+Norte</strong></a>, la información con que cuenta, se encuentra
+desactualizada, pues los datos con que se construyó son del año 2005. El
+atlas tampoco contiene tiene la metodología utilizada, por lo que este
+trabajo puede ser perfectamente complemento de aquél.</p>
+</div>
+</div>
+<div id="justificación" class="section level1">
+<h1>Justificación</h1>
+<hr />
+<p><strong>Detección de Necesidades de Información.</strong></p>
+<p>Actualmente existe información estadística sobre las unidades
+económicas y sus emisiones (RETC, 2018), ésta es captada por la SEMARNAT
+y está disponible al público en su portal. Sin embargo, la dinámica
+social y las necesidades de información obligan a ofrecer a la
+población, no solo datos estadísticos, sino que puedan asociarse a
+elementos geográficos.</p>
+<p><strong>Idoneidad.</strong></p>
+<p>El proyecto es pertinente porque se cuenta con las herramientas
+metodológicas y técnicas para poder asociar las empresas a coordenadas,
+con su referenciación geográfica. El procedimiento propuesto cumple con
+las fases recomendadas por los lineamentos de nuestra institución.</p>
+<p>En ausencia de mapas que muestren información actualizada a nivel
+geográfico, se propone georreferenciar la información para hacerla
+accesible de manera sencilla y visual, para los usuarios de la
+información que prefieren el manejo de los datos a través de mapas.
+Además de la información geográfica puntual, se pretende asociarla a
+otras capas de temas relacionados con ésta.</p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

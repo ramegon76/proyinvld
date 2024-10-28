@@ -1,0 +1,23 @@
+name: proy_inv_gob_ld
+output_dir: '.'
+navbar:
+  title: Aprovechamiento del lago de datos <br> para la implementación de criterios de gobierno,<br> seguridad, confidencialidad estadística, <br>calidad e interoperabilidad de información
+  left:
+  - text: "Presentación"
+    href: index.html
+  - text: "Criterios de gobierno"
+    href: cap_2.html
+  - text: "Calidad"
+    href: cap_3.html
+  - text: "Seguridad y confidencialidad"
+    href: cap_4.html
+  - text: "Interoperabilidad"
+    href: cap_5.html
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    theme: flatly
+    highlight: kate
+    lib_dir: site_libs
+    self_contained: no
