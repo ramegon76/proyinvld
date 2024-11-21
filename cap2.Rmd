@@ -29,6 +29,12 @@ knitr::include_graphics("img/activs_ntppieg.png")
 
 Este rediseño en el marco del MPEG ofrece un nuevo [**modelado del proceso EPTPTASS alineado al MPEG**](https://365inegi.sharepoint.com/sites/dgiai/100_DGG_DGIAII/150_DAA_DGAI/MPP/SiteAssets/ModeloProcesos/DGES/EPTPTASS/index.aspx#diagram/c9e4d3f0-1f4a-4d55-b83c-ba4608036e45){target="_blank"}, que es una representación y documentación estandarizada de los flujos de actividades y datos a través de las fases del modelo, cuyo objetivo es facilitar el análisis del proceso al proporcionar claridad sobre las actividades, tareas y personas involucradas, así como las entradas y salidas de datos en cada etapa, extendiendo de esta forma el alcance de la NTPPIEG para estandarizar el proceso.
 
+<br>
+
+<iframe src="https://ramegon76.github.io/modntppieg/#diagram/c9e4d3f0-1f4a-4d55-b83c-ba4608036e45" height="650" width="850" style="border: 1px solid #464646" allowfullscreen="" alt="Abrir en otra pestaña" data-external="1" scrolling="auto" ></iframe>
+
+<br>
+
 Por otro lado, la descripción de las actividades contenidas en cada fase del MPEG, tal como se presenta en la NTPPIEG, puede resultar insuficiente para modelar un proceso con mayor nivel de detalle. En estos casos, existen otros marcos de referencia que sirven como guías para incorporar tareas estandarizadas más específicas que las provistas en la NTPPIEG. Un ejemplo de ello es  
 el documento [**Finer-level of Activities of Generic Statistical Business Process Model**](https://statswiki.unece.org/spaces/GSBPM/pages/375095436/Finer-level+of+Activities+of+Generic+Statistical+Business+Process+Model){target="_blank"}, elaborado por el High-Level Group for the Modernisation of Official Statistics (HLG-MOS) de la Comisión Económica de las Naciones Unidas para Europa (UNECE), que ofrece un mayor nivel de granularidad que la NTPPIEG. En otros casos, se ha utilizado el desglose de tareas descrito en algunas de las guías recientemente publicadas que complementan a la NTPPIEG, como es el caso de la [**Guía de Diseño Conceptual**](https://extranet.inegi.org.mx/calidad/normatividad-y-otros-documentos/doc/8-Guia-de-DiseNo-Conceptual-2022_04_11.docx){target="_blank"}.
 
