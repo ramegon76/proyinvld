@@ -5,7 +5,7 @@ navbar:
   left:
   - text: "Presentación"
     href: index.html
-  - text: "Criterios de gobierno"
+  - text: "Proceso de Producción, Arquitectura de Datos y Metadatos"
     href: cap2.html
   - text: "Catálogo de datos"
     href: cap3.html

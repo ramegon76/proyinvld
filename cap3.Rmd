@@ -35,6 +35,3 @@ Se generaron muestras de información sobre las que se aplicaron algunas reglas 
 
 
 <br/>
-
-# Sección gobernanza.
-En cuanto a esta sección, se incorporaron algunos clasificadores...
