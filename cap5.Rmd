@@ -1,5 +1,5 @@
 ---
-title: "Interoperabilidad"
+title: "Seguridad y confidencialidad"
 --- 
 
 ```{r setup, include=FALSE}
@@ -11,6 +11,4 @@ knitr::opts_chunk$set(echo = FALSE,  fig.align="center", out.extra = 'style="dis
 <br/>
 <br/>
 
-# Mapa Digital de Unidades Económicas que Generan Sustancias Contaminantes
-
-Se muestra a continuación, una primera versión del mapa digital, cuyos puntos aún deben ser validados para garantizar su plena correspondencia con la ubicación geográfica de las unidades económicas.
+# Contenido por definir

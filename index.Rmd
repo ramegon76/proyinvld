@@ -16,14 +16,14 @@ knitr::opts_chunk$set(echo = FALSE,  fig.align="center", out.extra = 'style="dis
 <br/>
 
 ## 1.1 Objetivo General
-Desarrollar e implementar un prototipo que aproveche la tecnología de lago de datos para automatizar los flujos de trabajo, con el propósito de evaluar y aplicar criterios de gobierno de datos que permitan la integración e interoperabilidad de la información generada por el Instituto.
+Desarrollar e implementar un prototipo que aproveche la tecnología de lago de datos para automatizar los flujos de trabajo, con el propósito de aplicar criterios de gobierno de datos que permitan la integración e interoperabilidad de la información generada por el Instituto.
 
 
 <br/>
 
 ## 1.2 Objetivos Específicos
 
-1. Identificar los procesos, procedimientos, tecnología y roles relacionados con el gobierno de datos, en conjunto con las áreas correspondientes del Instituto.
+1. Identificar los procesos, procedimientos, tecnología y roles  en conjunto con las áreas correspondientes del Instituto.
 2. Implementar flujos de datos que permitan verificar el grado de cumplimiento de los criterios de gobierno de datos.
 3. Elaborar casos de uso que demuestren los beneficios de utilizar la tecnología de lago de datos para automatizar la aplicación de criterios de gobierno de datos en la integración de la información.
 4. Crear un prototipo de servicios de acceso a datos dirigidos a los usuarios finales, que facilite el aprovechamiento completo de la gama de información de manera uniforme y coherente.
@@ -34,23 +34,22 @@ Desarrollar e implementar un prototipo que aproveche la tecnología de lago de d
 
 El presente reporte documenta el proyecto "Aprovechamiento del lago de datos para la implementación de criterios de gobierno, seguridad, confidencialidad estadística, calidad e interoperabilidad de información", desarrollado en el marco del Programa Anual de Investigación 2024 del Instituto. Este proyecto surge como respuesta a los desafíos que conlleva la modernización de los sistemas de producción y difusión de información estadística y geográfica, y busca capitalizar el uso de la tecnología de lago de datos para fortalecer la integración de información y la creación de nuevos productos.
 
-La plataforma del lago de datos permitirá automatizar flujos de trabajo, facilitando la integración de múltiples fuentes y promoviendo la interoperabilidad entre diversas bases de datos. Al establecer criterios claros de gobierno de datos, el proyecto busca asegurar que la información generada cumpla con altos estándares de calidad, seguridad y confidencialidad estadística, respondiendo así tanto a las necesidades operativas como a las normativas vigentes. Esta estructura del lago de datos gobernado permitirá no solo una gestión más eficiente, sino también una mayor coherencia en el aprovechamiento de la información proveniente de diversos procesos de producción.
+La plataforma del lago de datos permitirá automatizar flujos de trabajo, facilitando la integración de múltiples fuentes y promoviendo la interoperabilidad entre diversas bases de datos. Al establecer criterios claros de gobierno, seguridad, confidencialidad estadística, calidad e interoperabilidad de datos (en lo sucesivo, *criterios*), el proyecto busca asegurar que la información generada responda tanto a las necesidades operativas como a las normativas vigentes. Una estructura de lago de datos gobernado permitirá no solo una gestión más eficiente, sino también una mayor coherencia en el aprovechamiento de la información proveniente de diversos procesos de producción.
 
-El prototipo desarrollado ofrecerá servicios de acceso orientados a los usuarios finales, permitiéndoles aprovechar de manera uniforme y consistente los datos disponibles. Esta aproximación permitirá a las áreas productoras trabajar de forma más efectiva al reducir redundancias y fomentar la reutilización de datos y metadatos, optimizando la producción y garantizando la actualización constante de la información que se genera.
+El prototipo de implementación de los *criterios* busca crear un entorno que permita a los usuarios aprovechar de manera uniforme y consistente los datos disponibles y que facilite a las áreas productoras trabajar de forma más efectiva al reducir redundancias y fomentar la reutilización de datos y metadatos, optimizando la producción y garantizando la actualización constante de la información que se genera. Los resultados permitirán validar la funcionalidad y escalabilidad del modelo para su aplicación en otros procesos de producción del Instituto. Esto contribuirá a consolidar el uso del lago de datos como una herramienta central en la producción, optimizando la operatividad interna y profundizando en la modernización de la producción de información.
 
-El éxito del proyecto posicionará al lago de datos como un recurso estratégico para el INEGI, al consolidar un entorno de datos moderno, escalable y alineado con las mejores prácticas internacionales en la gestión de información. Con ello, se busca no solo mejorar la eficiencia interna, sino también potenciar la capacidad del Instituto para ofrecer productos y servicios innovadores que respondan a las necesidades de análisis actuales y futuras.
 
 <br/>
 
 # 3. Caso de uso: Estadística de Puestos de Trabajo y Plazas de Trabajadores Afiliados a la Seguridad Social (EPTPTASS)
 
-El proceso denominado *Estadística de Puestos de Trabajo y Plazas de Trabajadores Afiliados a la Seguridad Social (EPTPTASS)* fue seleccionado como el caso de uso de prueba para evaluar la aplicabilidad de los criterios de gobierno de datos definidos en el proyecto. Esta estadística integra datos provenientes de diversas fuentes administrativas vinculadas al mercado laboral, lo que implica gestionar información compleja y heterogénea con altos estándares de calidad, confidencialidad y seguridad.
+El proceso de producción denominado *Estadística de Puestos de Trabajo y Plazas de Trabajadores Afiliados a la Seguridad Social (EPTPTASS)* fue seleccionado como el caso de uso de prueba para evaluar la aplicabilidad de los criterios de gobierno de datos definidos en el proyecto. Esta estadística integra datos provenientes de diversas fuentes administrativas vinculadas al mercado laboral, lo que implica gestionar información compleja y heterogénea con altos estándares de calidad, confidencialidad y seguridad.
 
-La implementación del prototipo en EPTPTASS permitirá representar flujos de trabajo orientados a la gestión de los datos, asegurando su integración coherente a través del lago de datos. A través de esta prueba se buscará verificar que los criterios de gobierno —como la trazabilidad, interoperabilidad, control de acceso y calidad— puedan ser aplicados de manera eficaz en escenarios reales. 
+La implementación de los *criterios* en el proceso de producción seleccionado permitirá mostrar que es posible mantener una gestión de datos coherente a través del lago de datos al verificar que los *criterios* pueden ser aplicados de manera eficaz en escenarios reales. 
 
-La EPTPTASS no solo representa un proceso de producción con relevancia técnica debido a los procedimientos que se aplican para la generación y uso de datos sintéticos, sino también una oportunidad para incidir en un proceso importante en el ámbito de la producción de información relacionada con el empleo y la seguridad social, que es un tema de interés permanente. Mediante el uso del prototipo, se espera obtener una gestión más eficiente y segura de los datos, garantizando que la información proporcionada a las unidades productoras y de análisis sea precisa, oportuna y consistente.
+El proceso de producción EPTPTASS es técnicamente relevante debido a los procedimientos que se aplican para la generación y uso de datos sintéticos, además de abordar un tema de interés relacionado con la fuerza de trabajo en México. 
 
-Los resultados obtenidos en este entorno permitirán validar la funcionalidad y escalabilidad del modelo para su aplicación en otros procesos de producción del Instituto. Esto contribuirá a consolidar el uso del lago de datos como una herramienta central en la producción, optimizando la operatividad interna y profundizando en la modernización de la producción de información del INEGI.
+
 
 <br/>
 
@@ -62,9 +61,9 @@ Texto sobre el desarrollo del proceso en etapas previas.
 
 ## 3.2 Descripción inicial del proceso de producción
 
-La documentación original del proceso de producción correspondiente a la generación de la Estadística de Puestos de Trabajo y Plazas de Trabajadores Afiliados a la Seguridad Social (EPTPTASS) describe y registra el flujo de actividades y datos tal como fue diseñado y ejecutado por el área responsable desde su inicio. Este documento refleja la comprensión interna del proceso sin haber sido alineado aún con criterios de gobierno de datos ni ajustado a estándares específicos.
+La descripción original del proceso de producción EPTPTASS recoge el flujo de actividades y datos como un proceso experimental en el que se buscó comparar la eficiencia de diversas herramientas tecnológicas para generar las estadísticas de interés a partir de los registros administrativos del IMSS e ISSSTE. Esta documentación refleja la visión de área productora antes de incorporar los *criterios* al proceso y configurarlo con base el MPEG.
 
-El diagrama presentado a continuación fue elaborado en colaboración con el personal de la *Dirección General Adjunta de Registros Administrativos Sociodemográficos*, y muestra las fases, actividades y tareas tal como se llevaron a cabo cuando se ideó el proceso, ofreciendo una perspectiva clara de cómo el área mencionada gestionó la producción de esta estadística en su contexto operativo. Esta documentación permite comprender la estructura y secuencia de las acciones involucradas, facilitando la identificación de los procedimientos y datos que se producen, aunque todavía no incorpora las prácticas estandarizadas que se evaluarán en etapas posteriores del proyecto.Este modelado preliminar constituye la base sobre la cual se aplicarán los criterios de gobierno de datos definidos más adelante. 
+El diagrama que se muestra a continuación fue elaborado en colaboración con el personal de la *Dirección General Adjunta de Registros Administrativos Sociodemográficos*, y muestra las fases, actividades y tareas tal como se llevaron a cabo en su contexto operativo original, ofreciendo una perspectiva clara de cómo el área mencionada gestionó la producción en este proceso. Esta documentación permite comprender la estructura y secuencia de las acciones involucradas, facilitando la identificación de los procedimientos y datos que se producen y constituye la base sobre la cual se aplican los *criterios* definidos en las siguientes secciones. 
 
 <br>
 

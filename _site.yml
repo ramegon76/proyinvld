@@ -7,12 +7,14 @@ navbar:
     href: index.html
   - text: "Criterios de gobierno"
     href: cap2.html
-  - text: "Calidad"
+  - text: "Catálogo de datos"
     href: cap3.html
-  - text: "Seguridad y confidencialidad"
+  - text: "Calidad"
     href: cap4.html
-  - text: "Interoperabilidad"
+  - text: "Seguridad y confidencialidad"
     href: cap5.html
+  - text: "Interoperabilidad"
+    href: cap6.html
 output:
   html_document:
     toc: yes

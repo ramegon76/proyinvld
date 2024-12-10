@@ -1,5 +1,5 @@
 ---
-title: "Calidad"
+title: "Catálogo de datos (Open Metadata)"
 --- 
 
 ```{r setup, include=FALSE}
@@ -10,9 +10,31 @@ knitr::opts_chunk$set(echo = FALSE,  fig.align="center", out.extra = 'style="dis
 
 <br/>
 
-## Unidades de Observación
+## En construcción...
 
-Los establecimientos que están obligados a presentar declaración de la Cédula de Operación Anual (COA) para el Registro de Emisiones y Transferencia de Contaminantes (RETC), ante la Secretaría del Medio Ambiente y Recursos Naturales (SEMARNAT).
+<br/>
+<br/>
 
-## Cobertura Geográfica
-A nivel nacional.
+
+# Incorporación de la información (datos sintéticos) de las EPTPTASS a la herramienta de Catálogo de Datos (open metadata).
+
+<br/>
+
+# Mapeo de la información objetivo en el lago de datos (Harvesting).
+
+Se habilitó la conexión al sistema de almacenamiento del LCiD donde se encuentran alojados los datos objeto de este caso de uso.
+
+Se llevó a cabo un proceso de mapeo y recopilación de los metadatos estructurales de los archivos, con el fin de tener un panorama completo de los contenidos disponibles y su estructura.
+
+Utilizando el diccionario de datos que nos proporcionaron, se añadieron las descripciones correspondientes a las columnas/variables de los archivos, permitiendo así una mejor comprensión y claridad en los metadatos estructurales.
+
+<br/>
+
+# Sección perfilado y calidad de los datos.
+Se generaron muestras de información sobre las que se aplicaron algunas reglas básicas de perfilado y de calidad en las variables de Sexo, CURP y Nombre.
+
+
+<br/>
+
+# Sección gobernanza.
+En cuanto a esta sección, se incorporaron algunos clasificadores...
