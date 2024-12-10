@@ -1,0 +1,14 @@
+---
+title: "Interoperabilidad"
+--- 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,  fig.align="center", out.extra = 'style="display:block; margin:auto;"')
+```
+
+<div class=text-justify>
+
+<br/>
+<br/>
+
+## Contenido por definir
