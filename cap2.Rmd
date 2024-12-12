@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = FALSE,  fig.align="center", out.extra = 'style="dis
 
 # 4. Gestión de actividades del proceso de producción
 
-El primer paso para establecer las reglas de gobierno en el proceso de este proyecto es definir e incorporar el Modelo del Proceso Estadístico y Geográfico (MPEG) como el marco fundamental de la estandarización.
+El primer paso para implementar criterios de gobierno en el proceso producción objeto de este proyecto, consiste en incorporar el Modelo del Proceso Estadístico y Geográfico (MPEG) como el marco fundamental para su gestión estandarizada.
 
 El MPEG proporciona una estructura clara para organizar las actividades de producción de información, definiendo una serie de fases y actividades que guían el flujo de trabajo desde la planificación hasta la difusión y evaluación del proceso. Al adoptar el MPEG como base, se busca lograr uniformidad en las prácticas empleadas, facilitando así la consistencia y comparabilidad de los datos producidos, así como la coordinación entre distintas áreas dentro del Instituto.
 
@@ -59,9 +59,9 @@ Para continuar con la implementación de los criterios de gobierno al proceso, s
 
 <br/>
 
-## Modelo de Objetos de Información (MOI)
+## 5.1 Modelo de Objetos de Información (MOI)
 
-El Modelo de Objetos de Información de los Procesos de Producción (MOI) que se utiliza como referencia está basado principalmente en el Modelo Genérico de Información Estadística (GSIM), un marco conceptual desarrollado por la Comisión Económica de las Naciones Unidas para Europa (UNECE) cuyo objetivo es proporcionar una base común para la definición, análisis e interoperabilidad de los procesos para ser utilizada en la gestión de la información en diferentes ámbitos.
+El [Modelo de Objetos de Información de los Procesos de Producción (MOI)](pdfs/Modelo de objetos de información (MOI).pdf){target="_blank"} que se utiliza como referencia está basado principalmente en el Modelo Genérico de Información Estadística (GSIM), un marco conceptual desarrollado por la Comisión Económica de las Naciones Unidas para Europa (UNECE) cuyo objetivo es proporcionar una base común para la definición, análisis e interoperabilidad de los procesos para ser utilizada en la gestión de la información en diferentes ámbitos.
 La modernización de los procesos de producción basada en estándares y marcos de referencia internacionales, pone énfasis en la posibilidad de compartir y reutilizar procesos, métodos, componentes y repositorios de datos. Para ello se requiere que los diseñadores de procesos puedan identificar los elementos que están disponibles para su reutilización en ejecuciones posteriores de un mismo proceso o para procesos similares. La reutilización implica evaluar si esos recursos son realmente adecuados para el propósito específico en un menor tiempo del que llevaría crear nuevos elementos de diseño.
 
 En el INEGI se inició el esfuerzo por estandarizar procesos con la implementación del Modelo del Proceso Estadístico y Geográfico (MPEG) que busca, al mismo tiempo, maximizar la transparencia en la documentación como un modo de garantizar la trazabilidad de la información producida. El MOI contribuye a la estandarización de los procesos al describir de forma genérica los objetos de información estandarizados que se utilizan como entradas y salidas en un proceso de producción. En dicho modelo se presenta una descripción de las clases de datos, metadatos, actores, roles, estructuras e instrumentos de intercambio que, entre otros conceptos, con la finalidad de proveer una vista integral de la gestión estandarizada de la información.
@@ -74,7 +74,7 @@ Algunas de las características del modelo son las siguientes:
 •	Se basa en un enfoque de dominio, es decir, está diseñado para diferentes dominios de gestión de la información. En el caso del INEGI, significa que puede aplicarse indistintamente a las diversas temáticas de los procesos de producción.
 •	Incluye un conjunto genérico de conceptos y relaciones que puede ser utilizado para representar cualquier tipo de información, independientemente de su formato o medio de almacenamiento.
 •	Se basa en un enfoque de procesos, es decir, describe cómo se producen, transforman, intercambian y utilizan los datos en el contexto de procesos de producción específicos.
-•	Se centra en la información y no en la tecnología, lo que significa que se enfoca en el significado y el uso de la información más que en la forma en que se administra al interior de los sistemas informáticos. Debido a esta característica, el MOIPP funciona como el elemento que vincula la capa de procesos del MGD, basada en el MPEG, y la capa de aplicaciones tecnológicas.
+•	Se centra en la información y no en la tecnología, lo que significa que se enfoca en el significado y el uso de la información más que en la forma en que se administra al interior de los sistemas informáticos. Debido a esta característica, el MOI funciona como el elemento que vincula la capa de procesos del MGD, basada en el MPEG, y la capa de aplicaciones tecnológicas.
 •	Está diseñado para ser compatible con otros estándares y marcos de referencia, como el Modelo Genérico de Actividad para Organizaciones Estadísticas (GAMSO) y la Arquitectura Común de Producción Estadística (CSPA), entre otros. En su conjunto, estos marcos proponen la definición de una metodología de referencia para lograr la estandarización y modernización de los procesos de las organizaciones productoras de información.
 
 El modelo incluye objetos genéricos, que se clasifican en cinco grupos, conforme a la figura 3:
@@ -95,10 +95,43 @@ knitr::include_graphics("img/gpos_gsim.png")
 
 **Grupo de Conceptos**. En este grupo se incluyen objetos relacionados con la definición de temas, variables, categorías, dominios de estudio, población objetivo y clasificaciones, proporcionando herramientas para comprender lo que miden los datos.
 
-En este contexto, el [Modelo de objetos de información](pdfs/Modelo de objetos de información.pdf){target="_blank"} describe la estructura de las entradas y salidas de datos que intervienen en el proceso de producción, proporcionando el soporte conceptual que se requiere para caracterizarlas e incorporarlas como parte de un sistema o servicio informático.
+En este contexto, el Modelo de Objetos de Información (MOI) que se incluye a continuación, se describe la estructura de las entradas y salidas de datos que intervienen en el proceso de producción, proporcionando el soporte conceptual que se requiere para caracterizarlas e incorporarlas como parte de un sistema o servicio informático.
 
-<iframe src="pdfs/Modelo de objetos de información.pdf" style="width:100%; height:600px;" frameborder="0" target="_blank"></iframe>
+<iframe src="pdfs/Modelo de objetos de información (MOI).pdf" style="width:100%; height:600px;" frameborder="0" target="_blank"></iframe>
 
+<br/>
+
+El MOI proporciona un marco conceptual estandarizado que estructura y da coherencia a la representación de los datos asociados al proceso. Brinda la semántica y atributos necesarios para clasificar y caracterizar los objetos de información que se representan en el modelado. De este modo, si una actividad genera una salida de tipo "Reporte", el MOI puede especificar qué tipo de atributos componen dicho objeto de información, como variables, clasificaciones o metadatos asociados. En otro ejemplo, al estandarizar la estructura de los conjuntos de datos, se facilita que los sistemas y aplicaciones de diferentes áreas puedan reconocerlos y procesarlos sin dificultades.
+
+La documentación basada en el MOI también facilita la trazabilidad del flujo de datos, asegurando que se pueda rastrear qué datos se usan en cada tarea y cómo evolucionan a través del proceso. Un caso típico del seguimiento al linaje de los datos ocurre en la fase de procesamiento, donde un conjunto de datos proveniente de la captación se va transformando conforme se avanza en los procesos de codificación, validación, edición, imputación, etc. Si se registran los atributos de estos datos conforme a aspectos específicos como variables, dominios de valor, metadatos del proceso, entre otros, se garantiza el conocimiento del detalle de las transformaciones que ocurren, y se posibilita la reproducibilidad del proceso, con fines de revisión o rendición de cuentas. En última instancia, lo anterior permite una integración más profunda entre los modelos de procesos y los modelos de datos.
+
+
+<br/>
+
+## 5.2 Caracterización de objetos de información
+
+Tomamos como ejemplo ilustrativo para este caso un objeto característico de la mayoría de los procesos de producción: el conjunto de datos que resulta de la validación. 
+
+
+```{r conjunto_datos, fig.align="center", out.width="40%", echo=FALSE, cache=TRUE, fig.cap="**Figura 4. Conjunto de datos después de la validación**"}
+
+knitr::include_graphics("img/conjunto_datos.png")
+
+```
+
+<br/>
+
+El cual se caracteriza con la siguiente ficha de datos:
+
+```{r tables-mtcars}
+library(dplyr)
+library(kableExtra)
+library(readxl)
+dt <- read_excel("datos/Atributos_ModeladoProcesos_V4_1.xlsx")
+dt %>%
+  kbl() %>%
+  kable_paper("hover", full_width = F)
+```
 
 
 

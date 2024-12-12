@@ -9,14 +9,12 @@ knitr::opts_chunk$set(echo = FALSE,  fig.align="center", out.extra = 'style="dis
 <div class=text-justify>
 
 <br/>
-
-## En construcción...
-
-<br/>
 <br/>
 
 
 # Incorporación de la información (datos sintéticos) de las EPTPTASS a la herramienta de Catálogo de Datos (open metadata).
+
+
 
 <br/>
 

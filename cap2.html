@@ -33,6 +33,8 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -347,10 +349,10 @@ Datos y Metadatos</h1>
 <div id="gestión-de-actividades-del-proceso-de-producción"
 class="section level1">
 <h1>4. Gestión de actividades del proceso de producción</h1>
-<p>El primer paso para establecer las reglas de gobierno en el proceso
-de este proyecto es definir e incorporar el Modelo del Proceso
-Estadístico y Geográfico (MPEG) como el marco fundamental de la
-estandarización.</p>
+<p>El primer paso para implementar criterios de gobierno en el proceso
+producción objeto de este proyecto, consiste en incorporar el Modelo del
+Proceso Estadístico y Geográfico (MPEG) como el marco fundamental para
+su gestión estandarizada.</p>
 <p>El MPEG proporciona una estructura clara para organizar las
 actividades de producción de información, definiendo una serie de fases
 y actividades que guían el flujo de trabajo desde la planificación hasta
@@ -440,23 +442,25 @@ los datos de manera consistente con el estándar que proporciona el
 Modelo de Objetos de Información (MOI) del Proceso de Producción.</p>
 <p><br/></p>
 <div id="modelo-de-objetos-de-información-moi" class="section level2">
-<h2>Modelo de Objetos de Información (MOI)</h2>
-<p>El Modelo de Objetos de Información de los Procesos de Producción
-(MOI) que se utiliza como referencia está basado principalmente en el
-Modelo Genérico de Información Estadística (GSIM), un marco conceptual
-desarrollado por la Comisión Económica de las Naciones Unidas para
-Europa (UNECE) cuyo objetivo es proporcionar una base común para la
-definición, análisis e interoperabilidad de los procesos para ser
-utilizada en la gestión de la información en diferentes ámbitos. La
-modernización de los procesos de producción basada en estándares y
-marcos de referencia internacionales, pone énfasis en la posibilidad de
-compartir y reutilizar procesos, métodos, componentes y repositorios de
-datos. Para ello se requiere que los diseñadores de procesos puedan
-identificar los elementos que están disponibles para su reutilización en
-ejecuciones posteriores de un mismo proceso o para procesos similares.
-La reutilización implica evaluar si esos recursos son realmente
-adecuados para el propósito específico en un menor tiempo del que
-llevaría crear nuevos elementos de diseño.</p>
+<h2>5.1 Modelo de Objetos de Información (MOI)</h2>
+<p>El <a
+href="pdfs/Modelo%20de%20objetos%20de%20información%20(MOI).pdf"
+target="_blank">Modelo de Objetos de Información de los Procesos de
+Producción (MOI)</a> que se utiliza como referencia está basado
+principalmente en el Modelo Genérico de Información Estadística (GSIM),
+un marco conceptual desarrollado por la Comisión Económica de las
+Naciones Unidas para Europa (UNECE) cuyo objetivo es proporcionar una
+base común para la definición, análisis e interoperabilidad de los
+procesos para ser utilizada en la gestión de la información en
+diferentes ámbitos. La modernización de los procesos de producción
+basada en estándares y marcos de referencia internacionales, pone
+énfasis en la posibilidad de compartir y reutilizar procesos, métodos,
+componentes y repositorios de datos. Para ello se requiere que los
+diseñadores de procesos puedan identificar los elementos que están
+disponibles para su reutilización en ejecuciones posteriores de un mismo
+proceso o para procesos similares. La reutilización implica evaluar si
+esos recursos son realmente adecuados para el propósito específico en un
+menor tiempo del que llevaría crear nuevos elementos de diseño.</p>
 <p>En el INEGI se inició el esfuerzo por estandarizar procesos con la
 implementación del Modelo del Proceso Estadístico y Geográfico (MPEG)
 que busca, al mismo tiempo, maximizar la transparencia en la
@@ -498,7 +502,7 @@ procesos de producción específicos. • Se centra en la información y no
 en la tecnología, lo que significa que se enfoca en el significado y el
 uso de la información más que en la forma en que se administra al
 interior de los sistemas informáticos. Debido a esta característica, el
-MOIPP funciona como el elemento que vincula la capa de procesos del MGD,
+MOI funciona como el elemento que vincula la capa de procesos del MGD,
 basada en el MPEG, y la capa de aplicaciones tecnológicas. • Está
 diseñado para ser compatible con otros estándares y marcos de
 referencia, como el Modelo Genérico de Actividad para Organizaciones
@@ -543,15 +547,336 @@ tipos y atributos.</p>
 objetos relacionados con la definición de temas, variables, categorías,
 dominios de estudio, población objetivo y clasificaciones,
 proporcionando herramientas para comprender lo que miden los datos.</p>
-<p>En este contexto, el <a
-href="pdfs/Modelo%20de%20objetos%20de%20información.pdf"
-target="_blank">Modelo de objetos de información</a> describe la
-estructura de las entradas y salidas de datos que intervienen en el
-proceso de producción, proporcionando el soporte conceptual que se
-requiere para caracterizarlas e incorporarlas como parte de un sistema o
-servicio informático.</p>
-<iframe src="pdfs/Modelo de objetos de información.pdf" style="width:100%; height:600px;" frameborder="0" target="_blank">
+<p>En este contexto, el Modelo de Objetos de Información (MOI) que se
+incluye a continuación, se describe la estructura de las entradas y
+salidas de datos que intervienen en el proceso de producción,
+proporcionando el soporte conceptual que se requiere para
+caracterizarlas e incorporarlas como parte de un sistema o servicio
+informático.</p>
+<iframe src="pdfs/Modelo de objetos de información (MOI).pdf" style="width:100%; height:600px;" frameborder="0" target="_blank">
 </iframe>
+<p><br/></p>
+<p>El MOI proporciona un marco conceptual estandarizado que estructura y
+da coherencia a la representación de los datos asociados al proceso.
+Brinda la semántica y atributos necesarios para clasificar y
+caracterizar los objetos de información que se representan en el
+modelado. De este modo, si una actividad genera una salida de tipo
+“Reporte”, el MOI puede especificar qué tipo de atributos componen dicho
+objeto de información, como variables, clasificaciones o metadatos
+asociados. En otro ejemplo, al estandarizar la estructura de los
+conjuntos de datos, se facilita que los sistemas y aplicaciones de
+diferentes áreas puedan reconocerlos y procesarlos sin dificultades.</p>
+<p>La documentación basada en el MOI también facilita la trazabilidad
+del flujo de datos, asegurando que se pueda rastrear qué datos se usan
+en cada tarea y cómo evolucionan a través del proceso. Un caso típico
+del seguimiento al linaje de los datos ocurre en la fase de
+procesamiento, donde un conjunto de datos proveniente de la captación se
+va transformando conforme se avanza en los procesos de codificación,
+validación, edición, imputación, etc. Si se registran los atributos de
+estos datos conforme a aspectos específicos como variables, dominios de
+valor, metadatos del proceso, entre otros, se garantiza el conocimiento
+del detalle de las transformaciones que ocurren, y se posibilita la
+reproducibilidad del proceso, con fines de revisión o rendición de
+cuentas. En última instancia, lo anterior permite una integración más
+profunda entre los modelos de procesos y los modelos de datos.</p>
+<p><br/></p>
+</div>
+<div id="caracterización-de-objetos-de-información"
+class="section level2">
+<h2>5.2 Caracterización de objetos de información</h2>
+<p>Tomamos como ejemplo ilustrativo para este caso un objeto
+característico de la mayoría de los procesos de producción: el conjunto
+de datos que resulta de la validación.</p>
+<div class="figure" style="text-align: center">
+<img src="img/conjunto_datos.png" alt="**Figura 4. Conjunto de datos después de la validación**" width="40%" style="display:block; margin:auto;" />
+<p class="caption">
+<strong>Figura 4. Conjunto de datos después de la validación</strong>
+</p>
+</div>
+<p><br/></p>
+<p>El cual se caracteriza con la siguiente ficha de datos:</p>
+<table class=" lightable-paper lightable-hover" style="font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Atributo
+</th>
+<th style="text-align:left;">
+Descripción
+</th>
+<th style="text-align:left;">
+Etiqueta
+</th>
+<th style="text-align:left;">
+Valor
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+ID del conjunto o repositorio de datos
+</td>
+<td style="text-align:left;">
+Clave de identificación del conjunto o repositorio de datos
+</td>
+<td style="text-align:left;">
+Dataset_ID
+</td>
+<td style="text-align:left;">
+EPTPTASS.5.3.1.DD
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nombre del conjunto o repositorio de datos
+</td>
+<td style="text-align:left;">
+Nombre y dirección electrónica del conjunto de datos
+</td>
+<td style="text-align:left;">
+Dataset_Name
+</td>
+<td style="text-align:left;">
+Conjunto de datos validados
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Programa de Información
+</td>
+<td style="text-align:left;">
+Programa de Información al que pertenece el conjunto de datos conforme
+al Inventario de Programas de Información
+</td>
+<td style="text-align:left;">
+Dataset_Programme
+</td>
+<td style="text-align:left;">
+Trabajo
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Acrónimo del Proceso de Producción
+</td>
+<td style="text-align:left;">
+Acrónimo del Proceso de Producción al que pertenece el conjunto de datos
+</td>
+<td style="text-align:left;">
+Dataset_PPAcron
+</td>
+<td style="text-align:left;">
+EPTPTASS
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Proceso de Producción
+</td>
+<td style="text-align:left;">
+Proceso de Producción al que pertenece el conjunto de datos
+</td>
+<td style="text-align:left;">
+Dataset_PPName
+</td>
+<td style="text-align:left;">
+Estadística de Puestos de Trabajo y Plazas de Trabajadores Afiliados a
+la Seguridad Social
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ciclo del Proceso de Producción
+</td>
+<td style="text-align:left;">
+Ciclo del Proceso de Producción al que pertenece el conjunto de datos
+</td>
+<td style="text-align:left;">
+Dataset_PPCicle
+</td>
+<td style="text-align:left;">
+2023_06
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Acrónimo de la DGA responsable del conjunto de datos
+</td>
+<td style="text-align:left;">
+Acrónimo de la Dirección General Adjunta responsable del Proceso de
+Producción al que pertenece el conjunto de datos
+</td>
+<td style="text-align:left;">
+Dataset_OwnerAcron
+</td>
+<td style="text-align:left;">
+DGARAS
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+DGA responsable del conjunto de datos
+</td>
+<td style="text-align:left;">
+Dirección General Adjunta responsable del Proceso de Producción al que
+pertenece el conjunto de datos
+</td>
+<td style="text-align:left;">
+Dataset_Owner
+</td>
+<td style="text-align:left;">
+Dirección General Adjunta de Registros Administrativos Sociodemográficos
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Área responsable del conjunto de datos
+</td>
+<td style="text-align:left;">
+Área responsable del Proceso de Producción al que pertenece el conjunto
+de datos
+</td>
+<td style="text-align:left;">
+Dataset_Maintainer
+</td>
+<td style="text-align:left;">
+Dirección de Análisis y Explotación de Registros Administrativos
+Sociodemográficos
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fecha de creación
+</td>
+<td style="text-align:left;">
+Fecha de creación de conjunto de datos
+</td>
+<td style="text-align:left;">
+Dataset_StartDate
+</td>
+<td style="text-align:left;">
+2023-07-15T09:06:23Z
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Fecha de actualización
+</td>
+<td style="text-align:left;">
+Fecha de actualización de conjunto de datos
+</td>
+<td style="text-align:left;">
+Dataset_UpdateDate
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Versión
+</td>
+<td style="text-align:left;">
+Versión del conjunto de datos
+</td>
+<td style="text-align:left;">
+Dataset_Version
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Clave RBDyRIE
+</td>
+<td style="text-align:left;">
+Clave que tiene el conjunto de datos en el Registro de Bases de Datos y
+Repositorios de Información Electrónica (RBDyRIE).
+</td>
+<td style="text-align:left;">
+Dataset_RBDyRIE_Key
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ubicación
+</td>
+<td style="text-align:left;">
+URL de la ubicación del conjunto de datos
+</td>
+<td style="text-align:left;">
+Dataset_URL
+</td>
+<td style="text-align:left;">
+ND
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Referencia PTracking
+</td>
+<td style="text-align:left;">
+Define el artículo y fracción de la NTPPIEG de la actividad en la que se
+produce el conjunto de datos y que se asocia con el Sistema de Registro
+de Evidencias (PTRACKING).
+</td>
+<td style="text-align:left;">
+Dataset_PTrackingRef
+</td>
+<td style="text-align:left;">
+Art. 26 Fracc. II
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Formato de almacenamiento
+</td>
+<td style="text-align:left;">
+Especificación del formato técnico del conjunto de datos (e.g., CSV,
+JSON, Parquet)
+</td>
+<td style="text-align:left;">
+Dataset_Format
+</td>
+<td style="text-align:left;">
+Parquet
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nivel de acceso
+</td>
+<td style="text-align:left;">
+Define las restricciones de acceso al conjunto de datos
+</td>
+<td style="text-align:left;">
+Dataset_AccessLevel
+</td>
+<td style="text-align:left;">
+Restringido
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Notas
+</td>
+<td style="text-align:left;">
+Atributo para registrar notas sobre el conjunto de datos
+</td>
+<td style="text-align:left;">
+Dataset_Notes
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
