@@ -121,9 +121,9 @@ knitr::include_graphics("img/conjunto_datos.png")
 
 <br/>
 
-El cual se caracteriza con la siguiente ficha de datos:
+Este tipo de objetos de información se pueden caracterizar con fichas de datos con una estructura de atributos como la que se muestra a continuación:
 
-```{r tables-mtcars}
+```{r ficha}
 library(dplyr)
 library(kableExtra)
 library(readxl)
@@ -132,6 +132,15 @@ dt %>%
   kbl() %>%
   kable_paper("hover", full_width = F)
 ```
+
+<br/>
+
+La caracterización estandarizada de conjuntos de datos con atributos definidos según el MOI abre la puerta en lo inmediato para hacer posible la interoperabilidad entre aplicaciones y datos, asegurando que los datos puedan ser gestionados y procesados de la misma forma para diversos procesos. Además, facilita la automatización de tareas relacionadas con el flujo de datos y mejora la colaboración entre las áreas productoras y tecnológicas, al establecer un lenguaje común. A mediano plazo, esta práctica sienta las bases para impulsar la modernización y escalabilidad de los procesos de producción de información.
+
+<br/>
+
+
+
 
 
 
